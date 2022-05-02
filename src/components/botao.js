@@ -1,17 +1,14 @@
 'use strict'
 
-import React from  'react'
-import { PropTypes } from 'react'
+import React, { PropTypes } from 'react'
 
-const Botao = ({label, handleClick}) => (
-    <button onClick={handleClick}>{label}</button>
+const Botao = ({ label, handleClick }) => (
+  <button onClick={handleClick}>{label}</button>
 )
 
-
 Botao.propTypes = {
-    label:      PropTypes.string.isRequired,
-    handleClick: PropTypes.func    
+  label: PropTypes.string.isRequired,
+  handleClick: PropTypes.func
 }
-
 
 export default Botao
